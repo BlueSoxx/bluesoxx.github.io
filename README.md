@@ -1,2 +1,2 @@
-# bluesoxx.github.io
-Bluesoxx landing page.
+# bsx-web
+Landing page for bluesoxx.com.
