@@ -416,7 +416,8 @@
 	</div>
 	<div class="row">
 	  <div class="col-xs-8 col-xs-offset-2">
-	  <form id="mailing-list-form" class="form-inline" data-parsley-validate="">
+	  <form id="mailing-list-form" class="form-inline" data-parsley-validate=""
+		action="https://formspree.io/social@bluesoxx.com" method="POST">
 	    <fieldset>
 		<!-- Hidden fields for controlling Formspree -->
 		<input type="hidden" name="_next" value="./faq.html"/>
@@ -533,25 +534,21 @@
       });
     </script>
 
-    <!-- Form Validation: Mailing List -->
+    <!-- Form Validation and Submission: Mailing List -->
     <script type="text/javascript">
       $(function () {
         $('#mailing-list-form').parsley().on('form:submit', function() {
           console.log("Submitting mailing list subscription.")
-
-      $.ajax({
-      url: "https://formspree.io/social@bluesoxx.com",
-      method: "POST",
-      data: {message: "hello mailing list!"},
-      dataType: "json",
-
-      success: function() { console.log("Formspree success."); },
-      error: function() { console.log("Formspree error."); }
-
-      });
-
-
-          return false; // Don't submit form for this demo
+<!--          $.ajax({
+            url: "https://formspree.io/social@bluesoxx.com",
+            method: "POST",
+            data: {message: "hello to mailing list!"},
+            dataType: "json",
+            success: function() { console.log("Formspree success."); },
+            error: function() { console.log("Formspree error."); }
+          });
+-->
+          return true;
         });
       });
     </script>
