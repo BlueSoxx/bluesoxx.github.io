@@ -416,9 +416,9 @@
 	</div>
 	<div class="row">
 	  <div class="col-xs-8 col-xs-offset-2">
-	  <form id="mailing-list-form" class="form-inline" data-parsley-validate=""
-		method="POST">
-	    <fieldset>
+	    <form id="mailing-list-form" class="form-inline" data-parsley-validate=""
+		  method="POST">
+	      <fieldset>
 		<!-- Hidden fields for controlling Formspree -->
 		<input type="hidden" name="_next" value="./faq.html"/>
 		<input type="hidden" name="_subject"
@@ -430,16 +430,12 @@
 		  <input class="form-control" id="ml-email" name="_replyto"
 			 placeholder="Email Address" required="" type="email">
 		</div>
-	      <br>
+		<br>
 		<div class="form-actions">
 		  <button type="submit" class="btn btn-primary">Subscribe</button>
 		</div>
-	    </fieldset>
-	  </form>
-	  <script>
-	    var form =  document.getElementById('mailing-list-form');
-	    form.setAttribute('action', 'https://formspree.io/' + 'social' + '@' + 'bluesoxx' + '.' + 'com');
-	  </script>
+	      </fieldset>
+	    </form>
 	  </div>
 	</div>
       </div>
@@ -522,7 +518,7 @@
       });
     </script>
 
-    <!-- Form Validation and Submission: Mailing List -->
+    <!-- Form Validation: Mailing List -->
     <script type="text/javascript">
       $(function () {
         $('#mailing-list-form').parsley().on('form:submit', function() {
@@ -530,6 +526,12 @@
           return true;
         });
       });
+    </script>
+
+
+    <script>
+      var form =  document.getElementById('mailing-list-form');
+      form.setAttribute('action', 'https://formspree.io/' + 'info' + '@' + 'bluesoxx' + '.' + 'com');
     </script>
 
     <!-- Analytics -->
