@@ -539,15 +539,6 @@
       $(function () {
         $('#mailing-list-form').parsley().on('form:submit', function() {
           console.log("Submitting mailing list subscription.")
-<!--          $.ajax({
-            url: "https://formspree.io/social@bluesoxx.com",
-            method: "POST",
-            data: {message: "hello to mailing list!"},
-            dataType: "json",
-            success: function() { console.log("Formspree success."); },
-            error: function() { console.log("Formspree error."); }
-          });
--->
           return true;
         });
       });
