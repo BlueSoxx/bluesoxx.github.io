@@ -219,7 +219,7 @@
 		<!-- Hidden fields for controlling Formspree -->
 		<input type="hidden" name="_next" value="./faq.html"/>
 		<input type="hidden" name="_subject"
-		       value="Bluesoxx Registration: Next Steps"/>
+		       value="Bluesoxx Form Submission: Pre-Registration"/>
 		<input type="text" name="_gotcha" style="display:none"/>
 		<!--<input type="text" name="_format" value="plain" style="display:none"/>-->
 		<!-- Actual fields of the form -->
@@ -399,6 +399,13 @@
 		</div>
 	      </fieldset>
 	    </form>
+	    <!-- Somewhat obfuscate email, as it resides in action attribute. -->
+	    <script>
+	      var form =  document.getElementById('pre-registration-form');
+	      form.setAttribute('action',
+	        'https://formspree.io/' + 'info' + '@' + 'bluesoxx' + '.' + 'com');
+	    </script>
+
 	  </div>
         </div>
       </div>
@@ -422,7 +429,7 @@
 		<!-- Hidden fields for controlling Formspree -->
 		<input type="hidden" name="_next" value="./faq.html"/>
 		<input type="hidden" name="_subject"
-		       value="Subscription Confirmation: Bluesoxx Mailing List"/>
+		       value="Bluesoxx Form Submission: Mailing List Subscription"/>
 		<input type="text" name="_gotcha" style="display:none"/>
 		<input type="text" name="_format" value="plain" style="display:none"/>
 		<!-- Actual fields of the form -->
@@ -436,6 +443,12 @@
 		</div>
 	      </fieldset>
 	    </form>
+	    <!-- Somewhat obfuscate email, as it resides in action attribute. -->
+	    <script>
+	      var form =  document.getElementById('mailing-list-form');
+	      form.setAttribute('action',
+	        'https://formspree.io/' + 'social' + '@' + 'bluesoxx' + '.' + 'com');
+	    </script>
 	  </div>
 	</div>
       </div>
@@ -447,7 +460,6 @@
 	  <div class="col-lg-12">
 	    <p>
               <ul class="list-unstyled">
-		<li><a href="mailto:info@bluesoxx.com">info@bluesoxx.com</a></li>
 		<li><a href='m&#97;i&#108;to&#58;inf&#111;&#64;b&#108;&#37;&#55;5e&#115;&#111;%78x&#46;%&#54;3&#111;m'>in&#102;&#111;&#64;bl&#117;e&#115;oxx&#46;&#99;om</a></li>
 		<li class="pull-right">
 		  <a href="#top">[ Back to Top ]</a>
@@ -526,12 +538,6 @@
           return true;
         });
       });
-    </script>
-
-
-    <script>
-      var form =  document.getElementById('mailing-list-form');
-      form.setAttribute('action', 'https://formspree.io/' + 'info' + '@' + 'bluesoxx' + '.' + 'com');
     </script>
 
     <!-- Analytics -->
