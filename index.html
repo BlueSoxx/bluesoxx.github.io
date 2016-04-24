@@ -88,7 +88,8 @@
                     <hr class="light">
                     <p>Bluesoxx is offering introductory computer science classes for high school girls this May and June, in preparation for a longer course of study developed for Summer 2016 and beyond.</p>
                     <p>Girls who will be enrolling in a Vancouver-area secondary school next year, or who will be graduating this summer, are eligible to come and attend.  Any level of experience, from complete unfamiliarity to existing expertise, is welcome.</p>
-                    <a href="#details" class="btn btn-primary btn-xl page-scroll">Get the Details</a>
+		    <p>The initial classes will be held after school in the Mt. Pleasant area for approximately two hours, twice a week.  Exact dates and times will be set based on students' availability, as soon as everyone has registered below.</p>
+                    <a href="#details" class="btn btn-primary btn-xl page-scroll">More Details</a>
                 </div>
             </div>
         </div>
@@ -116,7 +117,7 @@
 			  in formal computer science, and professional-level
 			  programming.&nbsp;&nbsp;
 			  We will also work on leadership, presentation skills,
-			  and health and fitness: less painting-with-kids and more
+			  and health and fitness: less crafting-for-kids and more
 			  being-a-boss.
 			</p>
                     </div>
@@ -212,14 +213,22 @@
 		<h5 style="color:#00bc8c;">* indicates required fields</h5>
 	      </div>
 	    </div>
-	    <form id="pre-registration-form" class="form-horizontal" data-parsley-validate="">
+	    <form id="pre-registration-form" class="form-horizontal"
+		  data-parsley-validate="">
 	      <fieldset>
+		<!-- Hidden fields for controlling Formspree -->
+		<input type="hidden" name="_next" value="./faq.html"/>
+		<input type="hidden" name="_subject"
+		       value="Bluesoxx Registration: Next Steps"/>
+		<input type="text" name="_gotcha" style="display:none"/>
+		<input type="text" name="_format" value="plain" style="display:none"/>
+		<!-- Actual fields of the form -->
 		<div class="form-group required">
 		  <label for="fullName" class="col-lg-4 control-label">
 		    Full Name
 		  </label>
 		  <div class="col-lg-8">
-		    <input class="form-control" id="fullName"
+		    <input class="form-control" id="fullName" name="Name"
 			   required="" type="text">
 		  </div>
 		</div>
@@ -228,7 +237,7 @@
 		    Email
 		  </label>
 		  <div class="col-lg-8">
-		    <input class="form-control" id="email"
+		    <input class="form-control" id="email" name="_replyto"
 			   data-parsley-trigger="change" required="" type="email">
 		  </div>
 		</div>
@@ -237,7 +246,7 @@
 		    Secondary School
 		  </label>
 		  <div class="col-lg-8">
-		    <input class="form-control" id="school"
+		    <input class="form-control" id="school" name="School"
 			   required="" type="text">
 		  </div>
 		</div>
@@ -246,7 +255,7 @@
 		    Grade Level (2015-2016)
 		  </label>
 		  <div class="col-lg-8">
-		    <select class="form-control" id="grade" required="">
+		    <select class="form-control" id="grade" name="Grade" required="">
 		      <option value="">Choose...</option>
 		      <option value="8">Grade 8</option>
 		      <option value="9">Grade 9</option>
@@ -262,7 +271,7 @@
 		    Parent / Guardian Name
 		  </label>
 		  <div class="col-lg-8">
-		    <input class="form-control" id="pgName"
+		    <input class="form-control" id="pgName" name="PG_Name"
 			   required="" type="text">
 		  </div>
 		</div>
@@ -271,7 +280,7 @@
 		    Parent / Guardian Phone #
 		  </label>
 		  <div class="col-lg-8">
-		    <input class="form-control" id="pgPhone"
+		    <input class="form-control" id="pgPhone" name="PG_Phone"
 			   required="" type="text">
 		  </div>
 		</div>
@@ -280,7 +289,7 @@
 		    Parent / Guardian Email
 		  </label>
 		  <div class="col-lg-8">
-		    <input class="form-control" id="pgEmail"
+		    <input class="form-control" id="pgEmail" name="PG_Email"
 			   data-parsley-trigger="change" required="" type="email">
 		  </div>
 		</div>
@@ -291,7 +300,8 @@
 		  <div class="col-lg-8">
 		    <div class="checkbox">
 		      <label>
-			<input type="checkbox" id="summerAvailableP" checked="">
+			<input type="checkbox" id="summerAvailableP" name="Summer_Avail"
+			       checked="">
 			Yes, I am potentially available to attend the Summer 2016
 			Program in Vancouver.
 		      </label>
@@ -303,7 +313,7 @@
 		    Existing Experience
 		  </label>
 		  <div class="col-lg-8">
-		    <select class="form-control" id="experience">
+		    <select class="form-control" id="experience" name="Experience">
 		      <option value="">Please Choose ...</option>
 		      <option value="1">
 			1 - Never knowingly used a computer before.
@@ -377,7 +387,8 @@
 		    Comments / Questions
 		  </label>
 		  <div class="col-lg-8">
-		    <textarea class="form-control" rows="3" id="coments"></textarea>
+		    <textarea class="form-control" rows="3"
+			      id="comments" name="Comments"></textarea>
 		  </div>
 		</div>
 		<br>
@@ -407,9 +418,16 @@
 	  <div class="col-xs-8 col-xs-offset-2">
 	  <form id="mailing-list-form" class="form-inline" data-parsley-validate="">
 	    <fieldset>
+		<!-- Hidden fields for controlling Formspree -->
+		<input type="hidden" name="_next" value="./faq.html"/>
+		<input type="hidden" name="_subject"
+		       value="Subscription Confirmation: Bluesoxx Mailing List"/>
+		<input type="text" name="_gotcha" style="display:none"/>
+		<input type="text" name="_format" value="plain" style="display:none"/>
+		<!-- Actual fields of the form -->
 		<div class="form-group-required">
-		  <input class="form-control" id="ml-email" placeholder="Email Address"
-			 required="" type="email">
+		  <input class="form-control" id="ml-email" name="_replyto"
+			 placeholder="Email Address" required="" type="email">
 		</div>
 	      <br>
 		<div class="form-actions">
@@ -492,7 +510,24 @@
           $('.bs-callout-warning').toggleClass('hidden', ok);
         })
         .on('form:submit', function() {
-          console.log("Submitting pre-registration.")
+          console.log("Submitting pre-registration.");
+
+
+      $.ajax({
+      url: "https://formspree.io/info@bluesoxx.com",
+      method: "POST",
+      data: {message: "hello mailing list!"},
+      dataType: "json",
+
+      success: function() {
+        console.log("Formspree success.")
+      },
+      error: function() {
+        console.log("Formspree error.")
+      }});
+
+
+
           return false; // Don't submit form for this demo
         });
       });
@@ -503,6 +538,19 @@
       $(function () {
         $('#mailing-list-form').parsley().on('form:submit', function() {
           console.log("Submitting mailing list subscription.")
+
+      $.ajax({
+      url: "https://formspree.io/social@bluesoxx.com",
+      method: "POST",
+      data: {message: "hello mailing list!"},
+      dataType: "json",
+
+      success: function() { console.log("Formspree success."); },
+      error: function() { console.log("Formspree error."); }
+
+      });
+
+
           return false; // Don't submit form for this demo
         });
       });
