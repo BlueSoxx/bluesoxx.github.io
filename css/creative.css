@@ -209,8 +209,18 @@ aside {
     }
 }
 
-
-
+/* Prevent navbar from collapsing on return pages to protect "Back to Home" */
+.navbar-nocollapse .navbar-brand, .navbar-nocollapse .navbar-nav>li {
+    margin-left: 15px;
+    height: 24px;
+}
+.navbar-nocollapse .navbar-nav>li, .navbar-nocollapse .navbar-nav {
+    float: left !important;
+}
+.navbar-nocollapse .navbar-right {
+    float: right!important;
+    margin-right: 5px;
+}
 
 header {
     position: relative;
