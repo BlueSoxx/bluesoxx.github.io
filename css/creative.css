@@ -194,6 +194,10 @@ aside {
     padding: 0;
 }
 
+.sm-padding {
+    padding: 50px 0;
+}
+
 /* Navbar: small screen */
 
 .navbar-default {
