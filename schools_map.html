@@ -1,0 +1,356 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Map - BlueSoxx Recruits' Schools Locations </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+<script type="text/javascript">
+  function initialize() {
+
+    // Initializing map.
+    var centerlatlng = new google.maps.LatLng(49.263921,-123.110107);
+    var myOptions = {
+      zoom: 12,
+      center: centerlatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+    // Writing out school markers and their info windows.
+          var ll = new google.maps.LatLng(49.341253, -123.042205);
+      var marker1 = new google.maps.Marker({
+        title: "Argyle Secondary",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow1 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Argyle Secondary</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;17.8 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;1 hour 22 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;16.9 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;25 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker1.addListener('click', function() {
+        infowindow1.open(map, marker1);
+      });
+
+          var ll = new google.maps.LatLng(49.2300181, -123.0901363);
+      var marker2 = new google.maps.Marker({
+        title: "South Hill Education Centre",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow2 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">South Hill Education Centre</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;4.7 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;31 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;4.7 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;10 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker2.addListener('click', function() {
+        infowindow2.open(map, marker2);
+      });
+
+          var ll = new google.maps.LatLng(49.262206, -123.164308);
+      var marker3 = new google.maps.Marker({
+        title: "Kitsilano Secondary School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow3 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Kitsilano Secondary School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;5.3 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;31 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;4.7 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;11 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker3.addListener('click', function() {
+        infowindow3.open(map, marker3);
+      });
+
+          var ll = new google.maps.LatLng(49.2398336, -123.1249864);
+      var marker4 = new google.maps.Marker({
+        title: "Eric Hamber Secondary School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow4 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Eric Hamber Secondary School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;3.2 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;24 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;3.0 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;7 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker4.addListener('click', function() {
+        infowindow4.open(map, marker4);
+      });
+
+          var ll = new google.maps.LatLng(49.2613311, -123.1027273);
+      var marker5 = new google.maps.Marker({
+        title: "Saint Patrick Regional Secondary School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow5 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Saint Patrick Regional Secondary School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;0.7 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;9 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;0.7 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;2 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker5.addListener('click', function() {
+        infowindow5.open(map, marker5);
+      });
+
+          var ll = new google.maps.LatLng(49.258542, -123.192102);
+      var marker6 = new google.maps.Marker({
+        title: "Lord Byng Secondary",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow6 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Lord Byng Secondary</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;6.8 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;33 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;6.6 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;14 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker6.addListener('click', function() {
+        infowindow6.open(map, marker6);
+      });
+
+          var ll = new google.maps.LatLng(49.2208472, -123.0708019);
+      var marker7 = new google.maps.Marker({
+        title: "David Thompson Secondary School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow7 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">David Thompson Secondary School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;8.4 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;45 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;6.9 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;14 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker7.addListener('click', function() {
+        infowindow7.open(map, marker7);
+      });
+
+          var ll = new google.maps.LatLng(49.2477758, -123.0606988);
+      var marker8 = new google.maps.Marker({
+        title: "Gladstone Secondary School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow8 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Gladstone Secondary School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;7.5 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;32 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;4.6 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;9 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker8.addListener('click', function() {
+        infowindow8.open(map, marker8);
+      });
+
+          var ll = new google.maps.LatLng(49.249007, -123.141144);
+      var marker9 = new google.maps.Marker({
+        title: "York House School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow9 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">York House School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;3.9 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;28 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;3.5 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;8 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker9.addListener('click', function() {
+        infowindow9.open(map, marker9);
+      });
+
+          var ll = new google.maps.LatLng(49.2665507, -123.2003348);
+      var marker10 = new google.maps.Marker({
+        title: "West Point Grey Academy",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow10 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">West Point Grey Academy</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;8.0 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;43 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;7.5 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;15 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker10.addListener('click', function() {
+        infowindow10.open(map, marker10);
+      });
+
+          var ll = new google.maps.LatLng(49.258542, -123.192102);
+      var marker11 = new google.maps.Marker({
+        title: "Lord Byng Secondary",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow11 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Lord Byng Secondary</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;6.8 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;33 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;6.6 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;14 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker11.addListener('click', function() {
+        infowindow11.open(map, marker11);
+      });
+
+          var ll = new google.maps.LatLng(49.2432792, -123.0047438);
+      var marker12 = new google.maps.Marker({
+        title: "Moscrop Secondary School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow12 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">Moscrop Secondary School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;13.4 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;49 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;8.7 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;18 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker12.addListener('click', function() {
+        infowindow12.open(map, marker12);
+      });
+
+          var ll = new google.maps.LatLng(49.2630615, -123.1556813);
+      var marker13 = new google.maps.Marker({
+        title: "St. John\'s School",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow13 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">St. John\'s School</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;4.1 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;27 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;4.1 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;10 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker13.addListener('click', function() {
+        infowindow13.open(map, marker13);
+      });
+
+          var ll = new google.maps.LatLng(49.2823082, -123.0429965);
+      var marker14 = new google.maps.Marker({
+        title: "PNE Forum",
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: ll
+      });
+      var infowindow14 = new google.maps.InfoWindow({
+        content:
+        '<h3>Bluesock Recruit:<span style = "display: block;">PNE Forum</span></h3>' +
+        '<ul>' +
+          '<li><b>Transit Distance</b>:&nbsp;&nbsp;7.9 km</li>' +
+          '<li><b>Transit Time</b>:&nbsp;&nbsp;42 mins</li>' +
+          '<li><b>Driving Distance</b>:&nbsp;&nbsp;7.4 km</li>' +
+          '<li><b>Driving Time</b>:&nbsp;&nbsp;16 mins</li>' +
+        '</ul>' +
+        '<p>Calculated for 3:10pm weekday departure.</p>'
+      });
+      marker14.addListener('click', function() {
+        infowindow14.open(map, marker14);
+      });
+
+    
+    // Code for plotting Bluesoxx HQ
+    var ll = new google.maps.LatLng(49.263921,-123.110107);
+    var img = new google.maps.MarkerImage('http://www.bluesoxx.com/graphics/bsx-medallion-marker.png');
+    var markerBsx = new google.maps.Marker({
+      title: "Suite Genius",
+      icon: img,
+      map: map,
+      position: ll
+    });
+    var infowindowBsx = new google.maps.InfoWindow({
+      content:
+      '<h3>BlueSoxx Meeting Point</h3>' +
+      '<p><a href="https://suite-genius.com/mt-pleasant/" target="_blank">Suite Genius</a>,' +
+          ' 3rd Floor</p>' +
+      '<p>225 West 8th Ave</p>' +
+      '<p>Vancouver, BC V5Y 1N3</p>'
+    });
+    markerBsx.addListener('click', function() {
+      infowindowBsx.open(map, markerBsx);
+    });
+
+  };      
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+  <div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>

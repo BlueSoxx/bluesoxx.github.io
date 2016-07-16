@@ -10,6 +10,15 @@ body {
     height: 100%;
 }
 
+/* Text Formatting */
+span.highlight {
+  display: inline-block;
+  color: #FFFFFF;
+/*  background: #f05f40;*/
+  background: #ee4b28;
+  padding: 0 3px 0 3px;
+}
+
 /* FAQ styling */
 .panel-body {
     padding: 15px 15px 15px 15px;
