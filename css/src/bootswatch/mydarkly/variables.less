@@ -9,33 +9,30 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-base:              #000;
-@gray-darker:            #1E1F2C;
-@gray-dark:              #322B32; // #333
-@gray:                   #424349;
-@gray-purple:            #493B49;
-@gray-light:             #998E99; // #999
-@gray-lighter:           #EBEBEB; // #eee
+@lime-green:            #3059AA;
+@bright-plum:           #00FF00;
 
-@lime-green:            #77E588;
-@bright-plum:           #500b42;
+@brand-primary:         #FFFFFF;
+@brand-success:         #1EBD90;
+@brand-info:            #FF702D;
+@brand-warning:         #BD1E1E;
+@brand-danger:          #FF0000;
 
-@brand-primary:         #223b76;
-//@brand-primary:       #375a7f;
-@brand-success:         #00bc8c;
-@brand-info:            #3498DB;
-@brand-warning:         #F39C12;
-@brand-danger:          #E74C3C;
+//@gray-dark:               #A5AFC5;  // faq text bg
 
+@light-gray:		  #E8EBF0;  // bg
+@black:                   #000000;  // text on color
+@dark-gray:		  #101010;  // text
+@pale-green:              #d0c6b8;// well (like for form)
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @gray-darker;
+@body-bg:               @light-gray;
 //** Global text color on `<body>`.
-@text-color:            #fff;
+@text-color:            @dark-gray;
 
 //** Global textual link color.
 @link-color:            @lime-green;
@@ -152,10 +149,10 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              @text-color;
-@btn-default-bg:                 @gray-purple;
+@btn-default-bg:                 @brand-primary;
 @btn-default-border:             @btn-default-bg;
 
-@btn-primary-color:              #fff;
+@btn-primary-color:              #FFF;
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             @btn-primary-bg;
 
@@ -188,7 +185,7 @@
 //##
 
 //** `<input>` background color
-@input-bg:                       #fff;
+@input-bg:                       #FFF;
 //** `<input disabled>` background color
 @input-bg-disabled:              @gray-lighter;
 
@@ -585,9 +582,9 @@
 @label-danger-bg:             @brand-danger;
 
 //** Default label text color
-@label-color:                 #fff;
+@label-color:                 #FFF;
 //** Default text color of a linked label
-@label-link-hover-color:      #fff;
+@label-link-hover-color:      #FFF;
 
 
 //== Modals
@@ -723,7 +720,7 @@
 @panel-default-border:        @gray;
 @panel-default-heading-bg:    @gray-dark;
 
-@panel-primary-text:          #fff;
+@panel-primary-text:          #FFF;
 @panel-primary-border:        @brand-primary;
 @panel-primary-heading-bg:    @brand-primary;
 
@@ -767,7 +764,7 @@
 //
 //##
 
-@well-bg:                     @gray-dark;
+@well-bg:                     @pale-green;
 @well-border:                 transparent;
 
 
