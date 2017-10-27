@@ -30,7 +30,7 @@ import time        # module we can use to make game pause
 # (but the installation is different from in PyCharm):
 # https://pythonprogramminglanguage.com/text-to-speech/
 #
-def display(msg, pause=1):
+def display(msg, pause=2):
     msg = msg + "  Spooky!"
     print(msg)
     time.sleep(pause)
@@ -71,13 +71,13 @@ name = ask("What is your name?")
 display("Welcome to the game, " + name + ".")
 display("You are at home late at night shopping for shoes on the internet.  You have one thousand dollars.")
 display("On Site 1 you find shoes that won't be delivered for months, from a company that has never made shoes before.")
-display("These shoes cost one thousand dollars.", 3)
+display("These shoes cost one thousand dollars.", 5)
 display("On Site 2 you find shoes that are available immediately, from an established company, costing forty dollars.")
 
 # Ask whether the player wants to buy from the first site and respond appropriately.
 response = ask("Do you want to buy a pair of shoes from the first site?")
 if (response == "YES" or response == "Y"):
-    display("A dragon appears and tells you that you are a visionary.")
+    display("A dragon appears and proclaims you a visionary.")
 elif (response == "NO" or response == "N"):
     display("You go on to live the rest of your life, which turns out comfortable, but incomplete.")
 else:
@@ -88,12 +88,9 @@ response = ask("Do you want to buy 25 pairs of shoes from the second site?")
 if (response == "YES" or response == "Y"):
     display(name + ": really?  What are you going to do with 25 pairs of shoes?")
 elif (response == "NO" or response == "N"):
-    display("A skeleton appears and declares that " + name + " is sensible and boring.")
+    display("A skeleton appears and whispers that " + name + " is sensible and boring.")
 else:
     display("Sorry, your response was unintelligible.")
 
 # End the game.
 print("The game is over.")
-
-
-
