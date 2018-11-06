@@ -13,10 +13,13 @@ body {
 /* Text Formatting */
 span.highlight {
   display: inline-block;
+/*  color: #FFFFFF;*/
   color: #FFFFFF;
 /*  background: #f05f40;*/
 /*  background: #ee4b28;*/
-  background: #00bc8c;
+/*  background: #00bc8c;*/
+  font-weight: 600;
+  background: #C96CBD;
   padding: 0 3px 0 3px;
 }
 
